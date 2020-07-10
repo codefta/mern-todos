@@ -1,0 +1,49 @@
+.new-wrap {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.input-wrap {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-todo {
+  border: none;
+  text-align: center;
+  padding: 10px;
+  font-size: medium;
+  border-bottom: 1px solid grey;
+  width: 60%;
+}
+
+.input-time {
+  border: none;
+  text-align: center;
+  padding: 10px;
+  font-size: medium;
+  border-bottom: 1px solid grey;
+  width: 10%;
+}
+
+.input-todo:focus {
+  border-bottom: 1px solid black;
+  /* width: 70%; */
+  outline: none;
+}
+
+.input-time:focus {
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+.button {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  width: 7%;
+  background-color: #e17055;
+  color: white;
+}

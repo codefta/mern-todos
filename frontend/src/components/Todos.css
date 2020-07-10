@@ -1,0 +1,55 @@
+.todo-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.item-todo {
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.item-todo:hover {
+  -webkit-box-shadow: 0px 2px 17px -2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 2px 17px -2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 17px -2px rgba(0, 0, 0, 0.15);
+}
+
+.wrap-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox-content {
+  text-align: left;
+  margin-right: 20px;
+}
+
+.todo-content {
+  width: 65%;
+}
+
+.time-content {
+  width: 30%;
+  text-align: right;
+  color: #8fb9a8;
+}
+
+.button-content {
+  width: 5%;
+}
+
+.button-delete {
+  border: none;
+  position: relative;
+  top: -15px;
+  right: -30px;
+  background-color: #e17055;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}

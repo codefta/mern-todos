@@ -1,0 +1,9 @@
+.container {
+  margin: 0 auto;
+  width: 70%;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}

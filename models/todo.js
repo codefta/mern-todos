@@ -4,30 +4,30 @@ const schema = mongoose.Schema({
   content: {
     type: String,
     minlength: 5,
-    required: true
+    required: true,
   },
   startTime: {
-    type: Date,
-    required: true
+    type: String,
+    required: true,
   },
   endTime: {
-    type: Date,
-    required: true
+    type: String,
+    required: true,
   },
   isDone: {
     type: Boolean,
-    default: false
+    default: false,
   },
   createdAt: {
     type: Date,
     required: true,
-    default: Date.now
+    default: Date.now,
   },
   updatedAt: {
     type: Date,
     required: true,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 })
 
 schema.pre('save', (next) => {
@@ -46,7 +46,7 @@ schema.set('toJSON', {
     returnedObject.id = returnedObject._id.toString()
     delete returnedObject._id
     delete returnedObject.__v
-  }
+  },
 })
 
 module.exports = mongoose.model('Todo', schema)
